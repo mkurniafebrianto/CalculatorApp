@@ -23,6 +23,12 @@ class MainActivity : AppCompatActivity() {
         btn_multiple.setOnClickListener() {
             check(first_number_input.text.toString(), second_number_input.text.toString(), '*')
         }
+
+        // add div feature
+        btn_div.setOnClickListener() {
+            check(first_number_input.text.toString(), second_number_input.text.toString(), '/')
+        }
+
     }
 
     // define function check
@@ -43,6 +49,7 @@ class MainActivity : AppCompatActivity() {
             '+' -> result = firstNum + secondNum
             '-' -> result = firstNum - secondNum
             '*' -> result = firstNum * secondNum
+            '/' -> result = firstNum / secondNum
         }
     }
 }
