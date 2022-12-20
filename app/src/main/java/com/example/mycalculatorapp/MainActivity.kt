@@ -18,6 +18,11 @@ class MainActivity : AppCompatActivity() {
         btn_minus.setOnClickListener() {
             check(first_number_input.text.toString(), second_number_input.text.toString(), '-')
         }
+
+        // add multiplication feature
+        btn_multiple.setOnClickListener() {
+            check(first_number_input.text.toString(), second_number_input.text.toString(), '*')
+        }
     }
 
     // define function check
@@ -37,6 +42,7 @@ class MainActivity : AppCompatActivity() {
         when (operator) {
             '+' -> result = firstNum + secondNum
             '-' -> result = firstNum - secondNum
+            '*' -> result = firstNum * secondNum
         }
     }
 }
