@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         // add subtract feature
-        btn_plus.setOnClickListener() {
+        btn_minus.setOnClickListener() {
             check(first_number_input.text.toString(), second_number_input.text.toString(), '-')
         }
     }
